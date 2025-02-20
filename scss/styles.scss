@@ -1,0 +1,18 @@
+@import "normalize";
+
+@import "variables";
+
+@import "small";
+
+
+
+    @import "mobilemenu";
+
+
+@media only screen and (min-width: 30rem){
+    @import "medium";
+} // end of a media query
+
+@media only screen and (min-width: 62rem) {
+    @import "large";
+} // end of a media query

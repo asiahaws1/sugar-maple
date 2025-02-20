@@ -1,0 +1,297 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  /*---- apply a natural box layout model to all elements -------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+  }
+
+  /* header */
+
+  #headerWrapper {
+    background-color: $primaryColor;
+    color: white;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center;
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+
+  } // end header
+
+  main {
+    p {
+        padding: .5rem 2vw;
+        color: #333;
+        line-height: 125%;
+    }
+
+    h1 {
+        padding: 1rem 2vw .5rem 2vw;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $defaultFont;
+  font-weight: $lightWeight;
+  min-width: 320px;
+}
+
+/* header */
+
+#headerWrapper {
+  background-color: $primaryColor;
+  color: white;
+}
+header {
+  display: grid;
+  grid-template-columns: 50px auto 44px;
+  column-gap: $gutter;
+  align-items: center;
+  padding: .5rem $gutter;
+  span {
+      font-size: 1.6rem;
+      font-weight: $lightWeight;
+      color: $primaryColor;
+  }
+
+} // end header
+
+main {
+  p {
+      padding: .5rem 2vw;
+      color: #333;
+      line-height: 125%;
+  }
+
+  h1 {
+      padding: 1rem 2vw .5rem 2vw;
+      font-size: 1.5rem;
+      color: $secondaryColor;
+      font-weight: $lightWeight
+  }
+
+  .hero {
+      width: 100%;
+  }
+
+  .hero img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+#footerWrapper {
+background:  $primaryColor;
+}
+footer {
+padding: 0.5rem $gutter;
+
+
+
+section.contact{
+    p {font-size: 1.2rem; margin: .5rem; color: white;}
+    ion-icon{color: $lightBlue; padding-right: 5px;}
+    a {color: white;}
+
+}// end of contact
+
+
+section.social{
+  text-align: center;
+  display: flex;
+    a {
+       padding-top: 1rem;
+       height: 4rem;
+       width: 4rem;
+       background-color: $secondaryColor;
+       color: white;
+       text-align: center;
+       img {height:26px;}
+    } // end a 
+        a:hover {
+            background-color: $accentColor;
+        }
+    }
+    
+  } // end of social
+
+
+section.location{
+    font-size: 1.5rem;
+    color: white;
+   
+}// end of location
+
+section.mission {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem; 
+  padding: 1.5rem;
+  background-color: #3e8e41;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+section.mission h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+section.mission p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+  padding: 0 1rem;
+}
+
+section.mission p strong {
+  color: #ffa500;
+}
+
+
+
+ 
+
+//styling rows
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1 rem 0;
+  padding: 0 8px;
+}
+
+
+//styling columns
+.column {
+  padding: 0 8px;
+  
+}
+
+
+footer {
+  padding: 1.5rem $gutter;
+}
+
+p.legal {
+  margin: 0;
+  font-weight: $lightWeight;
+  text-align: center;
+  color: white;
+  padding-top: 1rem; 
+}
+
+
+
+/* row column layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  padding: 0 $gutter;
+}
+
+//create for loop
+@for $i from 0 through 12 {
+  $w: calc (($i / 12) * 100%);
+
+  .small-#{$i} {
+    flex-basis: $w;
+  }
+} // end loop
+
+
+/* card one */
+
+.card1 figure {
+  margin: 1rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  figcaption {
+    padding: .5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: $boldWeight;
+    text-align: center;
+    background: $fourthColor;
+    color: white;
+  }
+} // end card 1
+
+
+/* --- SEE MORE LINK --- */
+.seemore {
+  display: block;
+  text-decoration: none;
+  margin: 1rem auto;
+  width: 260px;
+  text-align: center;
+  padding: .9rem;
+  border-radius: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: $boldWeight;
+  background-color: $tertiaryColor;
+  transition: background-color .5s ease;
+  &:hover {background-color: $accentColor;}
+
+} // end see more

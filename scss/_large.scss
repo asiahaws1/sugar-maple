@@ -1,0 +1,96 @@
+#theButton {
+    display: none;
+}
+
+#theNav {
+    background-color: $accentColor;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    overflow: visible;
+
+    li {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    li a {
+        padding: .9rem 1.2rem;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        border-top: none;
+    }
+
+    li a:hover {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    li.parent>a::before {
+        content: "\25BC";
+        font-size: .65rem;
+        color: rgba(255, 255, 255, .5);
+    }
+
+    li.active a {
+        background-color: $secondaryColor;
+    }
+
+    li ul {
+        background-color: $primaryColor;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        left: -999rem;
+    }
+
+    li ul li {
+        border-top: solid 1px rgba(0, 0, 0, 0.5);
+    }
+
+    li:hover ul {
+        left: auto;
+    }
+}
+
+
+/* card 1 */
+
+.card1 figure {
+    position: relative;
+    &:hover figcaption {opacity: 1;}
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+        width: 100%;
+        opacity: 0;
+        padding: 3rem 0 .5rem 0;
+        transition: opacity .6s ease;
+    }
+} // end card 1
+
+//create for loop
+@for $i from 0 through 12 {
+    $w: calc (($i / 12) * 100%);
+  
+    .large-#{$i} {
+      flex-basis: $w;
+    }
+  } // end loop
+
+
+
+
+
+
+
+footer div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}

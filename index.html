@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sugar Maple Inn</title>
+    <meta name="description" content="Sugar Maple Inn">
+    <meta name="author" content="Asia Haws">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FAV ICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+
+<body>
+
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo1x.png" alt="logo" width="50" height="50"
+                srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+            <h1>Sugar Maple Inn</h1>
+            <button id="theButton" title="hamburger button"></button>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <ul id="theNav">
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li class="active"><a href="#">About Us</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="parent"><a href="#">Amenities</a>
+                    <ul>
+                        <li><a href="#">Wi-Fi</a></li>
+                        <li><a href="#">Minibar</a></li>
+                        <li><a href="#">Pool</a></li>
+                        <li><a href="#">Fitness Center</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Events and Activities</a>
+                    <ul>
+                        <li><a href="#">Live Entertainment</a></li>
+                        <li><a href="#">Seasonal Events</a></li>
+                        <li><a href="#">Nature & Outdoors</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div id="mainWrapper">
+        <main>
+            <picture class="hero">
+                <!-- Specify valid image source for smaller screens -->
+                <source media="(max-width: 700px)" srcset="images/hero_small.webp">
+                <source media="(max-width: 1100px)" srcset="images/hero_md.webp">
+
+                <!-- Fallback image for browsers that do not support picture element or srcset -->
+                <img src="images/hero_large.webp" alt="Hero Image">
+            </picture>
+
+
+           
+
+        </main>
+    </div>
+
+   
+    <div class="row card1">
+        <div class="column small-12">
+            <h2>All of the Cool Activities that we Offer</h2>
+            <p>We offer cool stuff blah blah blah</p>
+        </div> <!-- end column -->
+    
+        <!-- Activities Section -->
+        <div class="column small-12 medium-6 large-4">
+            <figure>
+                <img src="images/music-entertainment.webp" alt="music" width="450" height="281">
+                <figcaption>Live Music Entertainment</figcaption>
+            </figure>
+        </div> <!-- end column -->
+        <div class="column small-12 medium-6 large-4">
+            <figure>
+                <img src="images/comedy-show.webp" alt="comedy" width="450" height="281">
+                <figcaption>Comedy Shows</figcaption>
+            </figure>
+        </div> <!-- end column -->
+        <div class="column small-12 medium-6 large-4">
+            <figure>
+                <img src="images/outdoor-yoga.webp" alt="yoga" width="450" height="281">
+                <figcaption>Guided Outdoor Yoga</figcaption>
+            </figure>
+        </div> <!-- end column -->
+        <div class="column small-12 medium-6 large-4">
+            <figure>
+                <img src="images/christmas-event.webp" alt="seasonal" width="450" height="281">
+                <figcaption>Holiday Parties</figcaption>
+            </figure>
+        </div> <!-- end column -->
+        <div class="column small-12 medium-6 large-4">
+            <figure>
+                <img src="images/hiking-event.webp" alt="hiking" width="450" height="281">
+                <figcaption>Wellness Hiking</figcaption>
+            </figure>
+        </div> <!-- end column -->
+        <div class="column small-12 medium-6 large-4">
+            <figure>
+                <img src="images/horseback-riding.webp" alt="horses" width="450" height="281">
+                <figcaption>Horseback Riding</figcaption>
+            </figure>
+        </div> <!-- end column -->
+    
+        <div class="column small-12">
+            <a href="#" class="seemore">See All Activities ></a>
+        </div>
+    </div> <!-- end row -->
+    
+
+    <div id="footerWrapper">
+        <footer>
+            <div>
+                <section class="contact">
+                    <p><ion-icon name="person"></ion-icon>Asia Haws</p>
+                    <p><ion-icon name="home"></ion-icon>Sugar Maple Inn</p>
+                    <p><ion-icon name="mail"></ion-icon><a href="mailto:sugarmaple.inn.com">sugarmaple.inn.com</a></p>
+                    <p><ion-icon name="globe"></ion-icon><a href="https://sugarmaple-inn.com">sugarmaple-inn.com</a></p>
+                    <p><ion-icon name="globe"></ion-icon><a href="tel:4359291923">9609291923</a></p>
+                </section>
+                <section class="social">
+                    <a href="#"><img src="images/s-instagram.svg" alt="Instagram SVG"></a>
+                    <a href="#"><img src="images/s-tiktok.svg" alt="TikTok SVG"></a>
+                    <a href="#"><img src="images/s-youtube.svg" alt="Youtuber SVG"></a>
+                    <a href="#"><img src="images/s-pinterest.svg" alt="Pinterest SVG"></a>
+                    <a href="#"><img src="images/s-facebook.svg" alt="Facebook SVG"></a>
+                </section>
+                <section class="location">
+                    <address>Willow Brook Cabin 3829 Maple Lane<br>Stowe, VT<br>05762</address>
+
+                </section>
+
+            </div>
+            <section class="mission">
+                <h2>Our Mission</h2>
+                <p>At Sugar Maple Inn, our mission is to provide guests with a memorable, relaxing, and enriching
+                    experience, surrounded by natural beauty, luxurious amenities, and warm hospitality.</p>
+            </section>
+
+            <p class="legal">&copy; <span id="year">X</span> &bull; Asia Haws</p>
+        </footer>
+    </div>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BedAndBreakfast",
+      "name": "Sugar Maple Inn",
+       "description": "The sweetest inn, with friendly staff and goregous views.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US",
+            "addressLocality": "Stowe",
+            "addressRegion": "VT",
+            "postalCode": "05762",
+            "streetAddress": "Willow Brook Cabin 3829 Maple Lane"
+        },
+        "telephone": "9609291923",
+        "image": "http://sugarmapleinn.s3-website.us-east-2.amazonaws.com/images/hero_large.webp",
+        "priceRange": "$150 - $300",
+      "numberOfRooms":"20",
+      "petsAllowed":"YES"
+    }
+    </script>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

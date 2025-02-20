@@ -1,0 +1,16 @@
+@media (min-width: 768px) { 
+    .footer {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+    }
+  }
+  
+  //create for loop
+@for $i from 0 through 12 {
+  $w: calc (($i / 12) * 100%);
+
+  .medium-#{$i} {
+    flex-basis: $w;
+  }
+} // end loop
